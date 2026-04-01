@@ -1,95 +1,113 @@
 import React from 'react';
 
 const Landing = ({ onStart }) => {
-    return (
-        <div className="landing fade-in">
-            {/* Hero Section */}
-            <section className="section hero">
-                <div className="container">
-                    <h1 className="text-hero slide-up stagger-1">
-                        The Senior AI <br /> Product Architect.
-                    </h1>
-                    <p className="text-sub slide-up stagger-2">
-                        Transform your vague ideas into realistic, structured prompt systems
-                        for AI coding tools. High-fidelity guidance from a developer's perspective.
-                    </p>
-                    <div className="hero-cta slide-up stagger-3">
-                        <button className="btn-primary" onClick={onStart}>
-                            Build your prompt
-                        </button>
-                        <span className="btn-hint">Free tool • No signup required</span>
-                    </div>
-                </div>
-            </section>
+  return (
+    <div className="landing fade-in">
+      {/* Hero Section */}
+      <section className="section hero">
+        <div className="container">
+          <h1 className="text-hero slide-up stagger-1">
+            The Senior AI <br /> Product Architect.
+          </h1>
+          <p className="text-sub slide-up stagger-2">
+            Transform your vague ideas into realistic, structured prompt systems
+            for AI coding tools. High-fidelity guidance from a developer's perspective.
+          </p>
+          <div className="hero-cta slide-up stagger-3">
+            <button className="btn-primary" onClick={onStart}>
+              Build your prompt
+            </button>
+            <span className="btn-hint">Free tool • No signup required</span>
+          </div>
+        </div>
+      </section>
 
-            {/* Features Section */}
-            <section className="section features">
-                <div className="container">
-                    <div className="section-header slide-up">
-                        <span className="section-tag">Features</span>
-                        <h2 className="section-title">Built for the <br /> modern engineer.</h2>
-                    </div>
+      {/* Features Section */}
+      <section className="section features">
+        <div className="container">
+          <div className="section-header slide-up">
+            <span className="section-tag">Features</span>
+            <h2 className="section-title">Built for the <br /> modern engineer.</h2>
+          </div>
 
-                    <div className="features-grid">
-                        <div className="feature-item slide-up stagger-1">
-                            <h3>Senior Persona</h3>
-                            <p>Prompty thinks like a Principal Engineer, focusing on architecture, logic, and realistic constraints instead of generic boilerplate.</p>
-                        </div>
-                        <div className="feature-item slide-up stagger-2">
-                            <h3>Modular Prompts</h3>
-                            <p>Break down complex applications into a sequence of executable prompts that minimize AI hallucinations and maximize code quality.</p>
-                        </div>
-                        <div className="feature-item slide-up stagger-3">
-                            <h3>Constraint Aware</h3>
-                            <p>Whether you're building a no-backend MVP or a microservices architecture, Prompty adjusts the output based on your specific skills and time limits.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div className="features-grid">
+            <div className="feature-item slide-up stagger-1">
+              <h3>Senior Persona</h3>
+              <p>Prompty thinks like a Principal Engineer, focusing on architecture, logic, and realistic constraints instead of generic boilerplate.</p>
+            </div>
+            <div className="feature-item slide-up stagger-2">
+              <h3>Modular Prompts</h3>
+              <p>Break down complex applications into a sequence of executable prompts that minimize AI hallucinations and maximize code quality.</p>
+            </div>
+            <div className="feature-item slide-up stagger-3">
+              <h3>Constraint Aware</h3>
+              <p>Whether you're building a no-backend MVP or a microservices architecture, Prompty adjusts the output based on your specific skills and time limits.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Differentiators Section */}
-            <section className="section differentiators">
-                <div className="container">
-                    <div className="diff-content">
-                        <div className="diff-text slide-up">
-                            <span className="section-tag">Why Prompty?</span>
-                            <h2 className="section-title">Different by design.</h2>
-                            <p className="description">
-                                Unlike generic prompt enhancers that return a single wall of text,
-                                Prompty provides a <strong>Technical Roadmap</strong>. We prioritize
-                                the "How" and "Why" of your build, ensuring you spend less time
-                                refactoring and more time shipping.
-                            </p>
-                        </div>
-                        <div className="diff-stats slide-up stagger-2">
-                            <div className="stat-item">
-                                <span className="stat-val">01</span>
-                                <span className="stat-label">Architecture First</span>
-                            </div>
-                            <div className="stat-item">
-                                <span className="stat-val">02</span>
-                                <span className="stat-label">Zero Clutter</span>
-                            </div>
-                            <div className="stat-item">
-                                <span className="stat-val">03</span>
-                                <span className="stat-label">Deep Intent</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* Differentiators Section */}
+      <section className="section differentiators">
+        <div className="container">
+          <div className="diff-content">
+            <div className="diff-text slide-up">
+              <span className="section-tag">Why Prompty?</span>
+              <h2 className="section-title">Different by design.</h2>
+              <p className="description">
+                Unlike generic prompt enhancers that return a single wall of text,
+                Prompty provides a <strong>Technical Roadmap</strong>. We prioritize
+                the "How" and "Why" of your build, ensuring you spend less time
+                refactoring and more time shipping.
+              </p>
+            </div>
+            <div className="diff-stats slide-up stagger-2">
+              <div className="stat-item">
+                <span className="stat-val">01</span>
+                <span className="stat-label">Architecture First</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-val">02</span>
+                <span className="stat-label">Zero Clutter</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-val">03</span>
+                <span className="stat-label">Deep Intent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* CTA Section */}
-            <section className="section cta-bottom">
-                <div className="container text-center">
-                    <h2 className="section-title slide-up">Start your next <br /> build today.</h2>
-                    <button className="btn-primary slide-up stagger-1" onClick={onStart}>
-                        Get Started
-                    </button>
-                </div>
-            </section>
+      {/* Dashboard Preview Section */}
+      <section className="section dashboard-section slide-up">
+        <div className="container">
+          <div className="section-header text-center">
+            <span className="section-tag">Inside the Engine</span>
+            <h2 className="section-title">High-fidelity output <br /> for high-fidelity builds.</h2>
+            <p className="section-description">
+              See the exact structure Prompty generates for your projects.
+              Modular, senior-level instructions designed for AI coding tools.
+            </p>
+          </div>
+          <div className="dashboard-display">
+            <img src="/dashboard-preview.png" alt="Prompty App Interface" />
+            <div className="display-shadow"></div>
+          </div>
+        </div>
+      </section>
 
-            <style jsx="true">{`
+      {/* CTA Section */}
+      <section className="section cta-bottom">
+        <div className="container text-center">
+          <h2 className="section-title slide-up">Start your next <br /> build today.</h2>
+          <button className="btn-primary slide-up stagger-1" onClick={onStart}>
+            Get Started
+          </button>
+        </div>
+      </section>
+
+      <style jsx="true">{`
         .landing {
           display: flex;
           flex-direction: column;
@@ -224,9 +242,45 @@ const Landing = ({ onStart }) => {
             font-size: 2.5rem;
           }
         }
+
+        .dashboard-section {
+          background-color: #fafafa;
+          border-top: 1px solid #eee;
+          padding-bottom: 0;
+        }
+        .section-description {
+          max-width: 600px;
+          margin: 0 auto 4rem;
+          color: var(--gray-medium);
+          font-size: 1.25rem;
+        }
+        .dashboard-display {
+          max-width: 1000px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+        .dashboard-display img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px 20px 0 0;
+          box-shadow: 0 -20px 60px rgba(0,0,0,0.05);
+          border: 1px solid #eee;
+          border-bottom: none;
+        }
+        .display-shadow {
+          position: absolute;
+          bottom: 0;
+          left: 5%;
+          right: 5%;
+          height: 40px;
+          background: rgba(0,0,0,0.1);
+          filter: blur(40px);
+          z-index: -1;
+        }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Landing;
