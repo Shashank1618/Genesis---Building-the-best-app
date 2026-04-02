@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 
-const Navbar = ({ activePage, setActivePage }) => {
+const Navbar = ({ activePage, setActivePage, usageCount, userApiKey }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="container nav-content">
-        <a href="#" className="logo" onClick={() => setActivePage('landing')}>Prompty</a>
+        <div className="nav-left">
+          <a href="#" className="logo" onClick={() => setActivePage('landing')}>Prompty</a>
+          <div className="tier-badge">
+            {userApiKey ? (
+              <span className="badge-unlimited">Unlimited Tier</span>
+            ) : (
+              <span className="badge-free">Free Tier ({usageCount}/3)</span>
+            )}
+          </div>
+        </div>
 
         <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <button
@@ -20,6 +29,12 @@ const Navbar = ({ activePage, setActivePage }) => {
             onClick={() => { setActivePage('docs'); setIsMenuOpen(false); }}
           >
             Docs
+          </button>
+          <button
+            className={`nav-link ${activePage === 'upgrade' ? 'active' : ''}`}
+            onClick={() => { setActivePage('upgrade'); setIsMenuOpen(false); }}
+          >
+            API Key
           </button>
           <button className="nav-btn-mobile" onClick={() => { setActivePage('builder'); setIsMenuOpen(false); }}>
             Get Started
@@ -48,10 +63,37 @@ const Navbar = ({ activePage, setActivePage }) => {
           justify-content: space-between;
           align-items: center;
         }
+        .nav-left {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+        }
         .logo {
           font-weight: 700;
           font-size: 1.5rem;
           letter-spacing: -0.05em;
+        }
+        .tier-badge {
+          display: flex;
+          align-items: center;
+        }
+        .badge-free, .badge-unlimited {
+          padding: 0.4rem 0.8rem;
+          border-radius: 20px;
+          font-size: 0.7rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+        .badge-free {
+          background: #FFF0E6;
+          color: #FF6B00;
+          border: 1px solid #FFD6B3;
+        }
+        .badge-unlimited {
+          background: #FFF0E6;
+          color: #FF6B00;
+          border: 1px solid #FFD6B3;
         }
         .nav-links {
           display: flex;

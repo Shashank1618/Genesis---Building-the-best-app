@@ -23,6 +23,26 @@ const Docs = () => {
         </ul>
       </section>
 
+      <section className="docs-section highlight">
+        <h2 id="get-api-key">Get Unlimited Access (Free)</h2>
+        <p>Prompty offers 3 professional prompt generations for free. To unlock <strong>unlimited</strong> usage, you can provide your own Gemini API key from Google AI Studio. It's 100% free!</p>
+
+        <div className="steps-box">
+          <div className="step">
+            <span className="step-num">1</span>
+            <p>Visit <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio (API Keys)</a>.</p>
+          </div>
+          <div className="step">
+            <span className="step-num">2</span>
+            <p>Click on <strong>"Create API key"</strong>.</p>
+          </div>
+          <div className="step">
+            <span className="step-num">3</span>
+            <p>Copy your new key and paste it into the "API Key" setting in Prompty.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="docs-section">
         <h2>Limitations</h2>
         <p>Prompty is optimized for initial scaffolding and product architecture. It does not replace
@@ -84,13 +104,49 @@ const Docs = () => {
           margin-bottom: 0.5rem;
         }
 
-        @media (max-width: 768px) {
-          .docs-title {
-            font-size: 2.5rem;
-          }
           .docs-lead {
             font-size: 1.2rem;
           }
+        }
+        
+        .highlight {
+          background: #fbfbfb;
+          border: 1px solid #eee;
+          padding: 2rem;
+          border-radius: 8px;
+        }
+        .steps-box {
+          margin-top: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        .step {
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+        .step-num {
+          background: var(--black);
+          color: var(--white);
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.8rem;
+          font-weight: 700;
+          flex-shrink: 0;
+        }
+        .step p {
+          margin: 0;
+          font-size: 1rem;
+        }
+        .step a {
+          color: var(--black);
+          text-decoration: underline;
+          font-weight: 600;
         }
       `}</style>
     </div>

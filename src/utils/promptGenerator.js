@@ -1,10 +1,10 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-export const generatePrompt = async (data) => {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+export const generatePrompt = async (data, userApiKey = null) => {
+  const apiKey = userApiKey || import.meta.env.VITE_GEMINI_API_KEY;
 
   if (!apiKey || apiKey === 'your_api_key_here') {
-    throw new Error("Gemini API Key is missing. Please set VITE_GEMINI_API_KEY in your .env file.");
+    throw new Error("API Key is missing. Please provide your own Google AI Studio API Key in the settings.");
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
