@@ -17,7 +17,7 @@ const Upgrade = ({ onSaveKey, onBackToDocs }) => {
       <div className="upgrade-card">
         <h1 className="upgrade-title">3/3 Free Prompts Used</h1>
         <p className="upgrade-description">
-          You've used your 3 free professional prompt generations. To continue using Prompty for <strong>unlimited</strong> generations for free, you just need to provide your own Google AI Studio API key.
+          You've used your 3 free professional prompt generations. To continue using Genesis for <strong>unlimited</strong> generations for free, you just need to provide your own Google AI Studio API key.
         </p>
 
         <div className="info-box">

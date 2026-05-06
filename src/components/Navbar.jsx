@@ -7,7 +7,7 @@ const Navbar = ({ activePage, setActivePage, usageCount, userApiKey }) => {
     <nav className="navbar">
       <div className="container nav-content">
         <div className="nav-left">
-          <a href="#" className="logo" onClick={() => setActivePage('landing')}>Prompty</a>
+          <a href="#" className="logo" onClick={() => setActivePage('landing')}>Genesis</a>
           <div className="tier-badge">
             {userApiKey ? (
               <span className="badge-unlimited">Unlimited Tier</span>

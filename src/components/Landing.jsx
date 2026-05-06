@@ -33,7 +33,7 @@ const Landing = ({ onStart }) => {
           <div className="features-grid">
             <div className="feature-item slide-up stagger-1">
               <h3>Senior Persona</h3>
-              <p>Prompty thinks like a Principal Engineer, focusing on architecture, logic, and realistic constraints instead of generic boilerplate.</p>
+              <p>Genesis thinks like a Principal Engineer, focusing on architecture, logic, and realistic constraints instead of generic boilerplate.</p>
             </div>
             <div className="feature-item slide-up stagger-2">
               <h3>Modular Prompts</h3>
@@ -41,7 +41,7 @@ const Landing = ({ onStart }) => {
             </div>
             <div className="feature-item slide-up stagger-3">
               <h3>Constraint Aware</h3>
-              <p>Whether you're building a no-backend MVP or a microservices architecture, Prompty adjusts the output based on your specific skills and time limits.</p>
+              <p>Whether you're building a no-backend MVP or a microservices architecture, Genesis adjusts the output based on your specific skills and time limits.</p>
             </div>
           </div>
         </div>
@@ -52,11 +52,11 @@ const Landing = ({ onStart }) => {
         <div className="container">
           <div className="diff-content">
             <div className="diff-text slide-up">
-              <span className="section-tag">Why Prompty?</span>
+              <span className="section-tag">Why Genesis?</span>
               <h2 className="section-title">Different by design.</h2>
               <p className="description">
                 Unlike generic prompt enhancers that return a single wall of text,
-                Prompty provides a <strong>Technical Roadmap</strong>. We prioritize
+                Genesis provides a <strong>Technical Roadmap</strong>. We prioritize
                 the "How" and "Why" of your build, ensuring you spend less time
                 refactoring and more time shipping.
               </p>
@@ -86,12 +86,12 @@ const Landing = ({ onStart }) => {
             <span className="section-tag">Inside the Engine</span>
             <h2 className="section-title">High-fidelity output <br /> for high-fidelity builds.</h2>
             <p className="section-description">
-              See the exact structure Prompty generates for your projects.
+              See the exact structure Genesis generates for your projects.
               Modular, senior-level instructions designed for AI coding tools.
             </p>
           </div>
           <div className="dashboard-display">
-            <img src="/dashboard-preview.png" alt="Prompty App Interface" />
+            <img src="/dashboard-preview.png" alt="Genesis App Interface" />
             <div className="display-shadow"></div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Privacy = () => {
 
             <section className="legal-section">
                 <h2>Data Collection</h2>
-                <p>Prompty is designed with a privacy-first approach. We do not store your personal data on our servers. All inputs provided in the builder are processed in real-time and are not persisted in our database.</p>
+                <p>Genesis is designed with a privacy-first approach. We do not store your personal data on our servers. All inputs provided in the builder are processed in real-time and are not persisted in our database.</p>
             </section>
 
             <section className="legal-section">

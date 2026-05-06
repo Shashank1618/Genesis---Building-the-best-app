@@ -4,13 +4,13 @@ const Docs = () => {
   return (
     <div className="docs container slide-up">
       <h1 className="docs-title">Documentation</h1>
-      <p className="docs-lead">Prompty is a high-fidelity system designed for senior developers and product architects.
+      <p className="docs-lead">Genesis is a high-fidelity system designed for senior developers and product architects.
         It transforms your core concepts into realistic, structured prompt systems for AI coding tools.</p>
 
       <section className="docs-section">
         <h2>How it Works</h2>
         <p>Our multi-step builder collects critical information about your application architecture,
-          tech stack, and constraints. Instead of generating a single large prompt, Prompty creates a
+          tech stack, and constraints. Instead of generating a single large prompt, Genesis creates a
           modular sequence of instructions that AI tools can process more effectively.</p>
       </section>
 
@@ -25,7 +25,7 @@ const Docs = () => {
 
       <section className="docs-section highlight">
         <h2 id="get-api-key">Get Unlimited Access (Free)</h2>
-        <p>Prompty offers 3 professional prompt generations for free. To unlock <strong>unlimited</strong> usage, you can provide your own Gemini API key from Google AI Studio. It's 100% free!</p>
+        <p>Genesis offers 3 professional prompt generations for free. To unlock <strong>unlimited</strong> usage, you can provide your own Gemini API key from Google AI Studio. It's 100% free!</p>
 
         <div className="steps-box">
           <div className="step">
@@ -38,14 +38,14 @@ const Docs = () => {
           </div>
           <div className="step">
             <span className="step-num">3</span>
-            <p>Copy your new key and paste it into the "API Key" setting in Prompty.</p>
+            <p>Copy your new key and paste it into the "API Key" setting in Genesis.</p>
           </div>
         </div>
       </section>
 
       <section className="docs-section">
         <h2>Limitations</h2>
-        <p>Prompty is optimized for initial scaffolding and product architecture. It does not replace
+        <p>Genesis is optimized for initial scaffolding and product architecture. It does not replace
           deep engineering logic but provides the perfect starting point to minimize hallucinations
           in AI coding models.</p>
       </section>
@@ -54,7 +54,7 @@ const Docs = () => {
         <h2>FAQ</h2>
         <div className="faq-item">
           <h3>Is it really free?</h3>
-          <p>Yes. Prompty is a free tool with no sign-ups or hidden costs.</p>
+          <p>Yes. Genesis is a free tool with no sign-ups or hidden costs.</p>
         </div>
         <div className="faq-item">
           <h3>Which AI tools are supported?</h3>

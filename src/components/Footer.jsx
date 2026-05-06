@@ -11,11 +11,11 @@ const Footer = ({ setActivePage }) => {
     <footer className="footer section">
       <div className="container footer-content">
         <div className="footer-info">
-          <span className="footer-logo">Prompty</span>
+          <span className="footer-logo">Genesis</span>
           <p>Premium SaaS for Senior AI Architects.</p>
         </div>
         <div className="footer-legal">
-          <span>&copy; 2026 Prompty Inc. All rights reserved.</span>
+          <span>&copy; 2026 Genesis Inc. All rights reserved.</span>
           <div className="legal-links">
             <a href="#" onClick={handleLegalClick('privacy')}>Privacy</a>
             <a href="#" onClick={handleLegalClick('terms')}>Terms</a>

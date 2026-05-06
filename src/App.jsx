@@ -16,10 +16,10 @@ function App() {
   const [generatedPrompt, setGeneratedPrompt] = useState('');
   const [tempFormData, setTempFormData] = useState({});
   const [usageCount, setUsageCount] = useState(() => {
-    return parseInt(localStorage.getItem('prompty_usage_count')) || 0;
+    return parseInt(localStorage.getItem('Genesis_usage_count')) || 0;
   });
   const [userApiKey, setUserApiKey] = useState(() => {
-    return localStorage.getItem('prompty_user_api_key') || '';
+    return localStorage.getItem('Genesis_user_api_key') || '';
   });
 
   const handleStartBuilder = () => {
@@ -48,7 +48,7 @@ function App() {
       if (!userApiKey) {
         const newCount = usageCount + 1;
         setUsageCount(newCount);
-        localStorage.setItem('prompty_usage_count', newCount.toString());
+        localStorage.setItem('Genesis_usage_count', newCount.toString());
       }
 
       setActivePage('output');
@@ -61,7 +61,7 @@ function App() {
 
   const handleSaveApiKey = (key) => {
     setUserApiKey(key);
-    localStorage.setItem('prompty_user_api_key', key);
+    localStorage.setItem('Genesis_user_api_key', key);
     setActivePage('builder'); // Return to builder after saving
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
